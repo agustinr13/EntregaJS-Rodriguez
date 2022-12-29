@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega</title>
+    <link rel="stylesheet" href="./bootstrap.css" />
+</head>
+<body>
+    <!-- Simulador formulario de registro -->
+    <div class="container"> 
+        <div class="container">
+            <h2>FORMULARIO DE REGISTRO</h2>
+        </div>
+        <form id="registro" action="/redireccion">
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Nombre y Apellido</label>
+                <input type="text" class="form-control" id="name" />
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label"
+                >Correo Electrónico</label
+                >
+                <input type="text" class="form-control" id="correo" />
+            </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput3" class="form-label">Contraseña
+                </label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <button type="submit" class="btn btn-outline-success">
+            Registrarse
+            </button>
+        </form>
+        <div id="welcome"></div>
+    </div>
+
+    <!-- Catálogo -->
+    <div class="container" id="stock">
+        <table>
+            <thead>
+                <tr>
+                    <th>ID -</th>
+                    <th>PRODUCTO</th>
+                    <th>PRECIO</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="tbody1">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Carrito -->
+    <div class="container" id="carrito">
+        <h2>Carrito de compras</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>ID -</th>
+                    <th>PRODUCTO</th>
+                    <th>PRECIO</th>
+                </tr>
+            </thead>
+            <tbody class="tbody2">
+            </tbody>
+        </table>
+    </div>
+    <div class="container" id="compra"> 
+        <h3>Total de la compra: <span id="totalCompra">0</span></h3>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
